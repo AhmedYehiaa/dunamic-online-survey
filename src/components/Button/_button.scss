@@ -7,7 +7,7 @@
   font-size: $m-size;
 }
 
-.large {
+.btn-large {
   padding: $l-size;
   margin-bottom: $xl-size;
   width: 100%;
@@ -16,23 +16,28 @@
   font-size: $l-size;
 }
 
-.medium {
+.btn-medium {
   padding: $m-size;
+  height: 55px;
+  width: 100px;
 }
 
-.primary {
+.btn-primary {
   background: $purpel;
 }
 
-.success {
+.btn-success {
   background-color: $success;
 }
 
-.warning {
+.btn-warning {
   background-color: $warning;
 }
 
-.danger {
+.btn-danger {
   background-color: $danger;
 }
 
+.btn-back {
+  background-color: $gray;
+}

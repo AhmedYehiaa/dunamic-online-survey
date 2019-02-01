@@ -3,16 +3,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export const TYPES = {
-  PRIMARY: 'primary',
-  WARNING: 'warning',
-  DANGER: 'danger',
-  SUCCESS: 'success',
+  PRIMARY: 'btn-primary',
+  WARNING: 'btn-warning',
+  DANGER: 'btn-danger',
+  SUCCESS: 'btn-success',
+  BACK: 'btn-back',
 };
 
 export const SIZES = {
-  SMALL: 'small',
-  MEDIUM: 'medium',
-  LARGE: 'large',
+  SMALL: 'btn-small',
+  MEDIUM: 'btn-medium',
+  LARGE: 'btn-large',
 };
 
 const Button = ({
