@@ -1,9 +1,10 @@
 .header {
+  position: fixed;
   width: 100%;
-  background: $off-black;
-  color: white;
   margin-bottom: $xl-size;
   padding: $m-size $l-size;
+  background: $off-black;
+  color: $white;
 }
 
 .header__title {
