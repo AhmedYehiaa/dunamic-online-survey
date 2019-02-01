@@ -26,9 +26,15 @@ module.exports = {
     "no-unused-expressions": ["error", { "allowShortCircuit": true }],
     "camelcase": ["warn", {"properties": "never"}],
     "no-underscore-dangle": "warn",
-    "jsx-a11y/anchor-is-valid": [ "error", {
-      "components": [ "Link" ],
-      "specialLink": [ "to" ]
-    }]
+    "jsx-a11y/label-has-associated-control": [ "error", {
+        "required": {
+          "some": [ "nesting", "id"  ]
+        }
+      }],
+      "jsx-a11y/label-has-for": [ "error", {
+        "required": {
+          "some": [ "nesting", "id"  ]
+        }
+      }]
   }
 };
