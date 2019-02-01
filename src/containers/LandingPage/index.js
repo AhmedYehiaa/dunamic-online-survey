@@ -1,21 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Button, { TYPES, SIZES } from '../../components/Button';
 
 const LandingPage = (props) => {
   const handleTakeSurevey = () => {
-    props.history.push('/survey');
+    props.history.push('/surveyForm');
   };
 
   return (
     <div className="landing-page">
       <h1 className="landing-page-header">product satisfaction survey</h1>
-      <button
+      <Button
         type="button"
-        className="button--large"
+        text="Take the Surevy"
+        disabled={false}
+        buttonType={TYPES.PRIMARY}
+        buttonSize={SIZES.LARGE}
         onClick={() => handleTakeSurevey()}
-      >
-          Take the Surevy
-      </button>
+      />
       <p className="landing-page-message">
           We realize how precious your time is.
           That’s why we made sure this survey will only take a quick

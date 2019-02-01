@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/Header';
 import LandingPage from './containers/LandingPage';
 import NotFound from './components/NotFound';
+import SurveyForm from './containers/SurveyForm';
 
 const App = () => {
   const title = 'Product Survey';
@@ -19,6 +20,7 @@ const App = () => {
       <div className="app-wrapper">
         <Switch>
           <Route path="/survey" component={LandingPage} />
+          <Route path="/surveyForm" component={SurveyForm} />
           <Route path="/not-found" component={NotFound} />
           <Redirect from="/" exact to="/survey" />
           <Redirect to="/not-found" />
