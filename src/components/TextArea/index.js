@@ -1,20 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TextArea = ({ value, onChange }) => (
+const TextArea = ({ value, placeholder, onChange }) => (
   <textarea
     className="text-area"
     value={value}
-    onChange={onChange}
+    placeholder={placeholder}
+    onChange={e => onChange(e.target.value)}
   />
 );
 
 TextArea.propTypes = {
   value: PropTypes.string,
+  placeholder: PropTypes.string,
   onChange: PropTypes.func.isRequired,
 };
 
 TextArea.defaultProps = {
   value: '',
+  placeholder: '',
 };
 export default TextArea;
