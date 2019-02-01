@@ -1,0 +1,38 @@
+.button {
+  padding: $s-size;
+  border: none;
+  border-radius: $xs-size;
+  color: $white;
+  font-weight: bold;
+  font-size: $m-size;
+}
+
+.large {
+  padding: $l-size;
+  margin-bottom: $xl-size;
+  width: 100%;
+  border: none;
+  border-bottom: $xs-size solid darken($purpel, 10%);
+  font-size: $l-size;
+}
+
+.medium {
+  padding: $m-size;
+}
+
+.primary {
+  background: $purpel;
+}
+
+.success {
+  background-color: $success;
+}
+
+.warning {
+  background-color: $warning;
+}
+
+.danger {
+  background-color: $danger;
+}
+
