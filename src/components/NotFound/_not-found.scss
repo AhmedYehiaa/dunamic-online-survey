@@ -1,0 +1,19 @@
+.notFound--status {
+  margin: 0;
+  font-size: 200px;
+}
+
+.notFound--message {
+  margin: $l-size;
+  text-transform: capitalize;
+}
+
+.link {
+  padding: $m-size;
+  margin-top: $m-size;
+  border-radius: $xs-size;
+  background-color: $purpel;
+  color: $white;
+  font-weight: bold;
+  text-decoration: none;
+}
