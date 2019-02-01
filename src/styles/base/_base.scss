@@ -21,6 +21,10 @@ button:disabled {
   cursor: default;
 }
 
+button:focus {outline:0;}
+
 textarea {
   font-family: 'Roboto', sans-serif;
 }
+
+textarea:focus {outline:0;}
