@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Dropdown = ({ options, selectValue, onChange }) => (
-  <select onChange={onChange} value={selectValue}>
+const Dropdown = ({ options, value, onChange }) => (
+  <select onChange={onChange} value={value}>
     {options.map(option => (
       <option key={option.value} value={option.value}>
         {option.name}
@@ -16,12 +16,12 @@ Dropdown.propTypes = {
     name: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired,
   })).isRequired,
-  selectValue: PropTypes.string,
+  value: PropTypes.string,
   onChange: PropTypes.func.isRequired,
 };
 
 Dropdown.defaultProps = {
-  selectValue: '',
+  value: '',
 };
 
 export default Dropdown;
