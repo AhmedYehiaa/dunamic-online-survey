@@ -5,7 +5,7 @@ const Filler = (props) => {
   const { percentage } = props;
   return (
     <div className="filler" style={{ width: `${percentage}%` }}>
-      <span>
+      <span className={`filler__percentage ${percentage > 0 ? 'text-white' : ''}`}>
         {percentage}
         %
       </span>
