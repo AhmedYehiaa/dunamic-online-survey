@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it should renders the footer component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Footer
+    disableBackButton={false}
+    disableNextButton={false}
+    onClickBack={[MockFunction]}
+    onClickNext={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="button-back"
+        >
+          <Button
+            buttonSize="btn-medium"
+            buttonType="btn-back"
+            disabled={false}
+            onClick={[MockFunction]}
+            text="Back"
+            type="button"
+          />
+        </div>,
+        <div
+          className="button-next"
+        >
+          <Button
+            buttonSize="btn-medium"
+            buttonType="btn-primary"
+            disabled={false}
+            onClick={[MockFunction]}
+            text="Next"
+            type="button"
+          />
+        </div>,
+      ],
+      "className": "footer",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Button
+            buttonSize="btn-medium"
+            buttonType="btn-back"
+            disabled={false}
+            onClick={[MockFunction]}
+            text="Back"
+            type="button"
+          />,
+          "className": "button-back",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "buttonSize": "btn-medium",
+            "buttonType": "btn-back",
+            "disabled": false,
+            "onClick": [MockFunction],
+            "text": "Back",
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Button
+            buttonSize="btn-medium"
+            buttonType="btn-primary"
+            disabled={false}
+            onClick={[MockFunction]}
+            text="Next"
+            type="button"
+          />,
+          "className": "button-next",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "buttonSize": "btn-medium",
+            "buttonType": "btn-primary",
+            "disabled": false,
+            "onClick": [MockFunction],
+            "text": "Next",
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "footer",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="button-back"
+          >
+            <Button
+              buttonSize="btn-medium"
+              buttonType="btn-back"
+              disabled={false}
+              onClick={[MockFunction]}
+              text="Back"
+              type="button"
+            />
+          </div>,
+          <div
+            className="button-next"
+          >
+            <Button
+              buttonSize="btn-medium"
+              buttonType="btn-primary"
+              disabled={false}
+              onClick={[MockFunction]}
+              text="Next"
+              type="button"
+            />
+          </div>,
+        ],
+        "className": "footer",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Button
+              buttonSize="btn-medium"
+              buttonType="btn-back"
+              disabled={false}
+              onClick={[MockFunction]}
+              text="Back"
+              type="button"
+            />,
+            "className": "button-back",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "buttonSize": "btn-medium",
+              "buttonType": "btn-back",
+              "disabled": false,
+              "onClick": [MockFunction],
+              "text": "Back",
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Button
+              buttonSize="btn-medium"
+              buttonType="btn-primary"
+              disabled={false}
+              onClick={[MockFunction]}
+              text="Next"
+              type="button"
+            />,
+            "className": "button-next",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "buttonSize": "btn-medium",
+              "buttonType": "btn-primary",
+              "disabled": false,
+              "onClick": [MockFunction],
+              "text": "Next",
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": "footer",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
