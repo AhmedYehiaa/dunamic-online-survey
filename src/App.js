@@ -1,5 +1,7 @@
 import React from 'react';
-import { Route, Redirect, Switch } from 'react-router-dom';
+import {
+  Route, Redirect, Switch, BrowserRouter,
+} from 'react-router-dom';
 
 import './App.css';
 import Header from './components/Header';
@@ -19,14 +21,16 @@ const App = () => {
         subTitle={subTitle}
       />
       <div className="app-wrapper">
-        <Switch>
-          <Route path="/survey" component={LandingPage} />
-          <Route path="/surveyForm/:id" component={SurveyForm} />
-          <Route path="/summary" component={Summary} />
-          <Route path="/not-found" component={NotFound} />
-          <Redirect from="/" exact to="/survey" />
-          <Redirect to="/not-found" />
-        </Switch>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/survey" component={LandingPage} />
+            <Route path="/surveyForm/:id" component={SurveyForm} />
+            <Route path="/summary" component={Summary} />
+            <Route path="/not-found" component={NotFound} />
+            <Redirect from="/" exact to="/survey" />
+            <Redirect to="/not-found" />
+          </Switch>
+        </BrowserRouter>
       </div>
     </div>
   );
