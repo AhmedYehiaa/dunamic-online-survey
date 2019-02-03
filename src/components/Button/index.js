@@ -8,6 +8,7 @@ export const TYPES = {
   DANGER: 'btn-danger',
   SUCCESS: 'btn-success',
   BACK: 'btn-back',
+  NEXT: 'btn-next',
 };
 
 export const SIZES = {

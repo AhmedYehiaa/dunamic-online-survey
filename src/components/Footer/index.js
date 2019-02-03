@@ -23,7 +23,7 @@ const Footer = ({
         onClick={onClickNext}
         text="Next"
         disabled={disableNextButton}
-        buttonType={TYPES.PRIMARY}
+        buttonType={TYPES.NEXT}
         buttonSize={SIZES.MEDIUM}
       />
     </div>

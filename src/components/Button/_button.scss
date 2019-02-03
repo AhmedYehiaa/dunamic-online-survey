@@ -24,7 +24,7 @@
   border: none;
   font-size: 25px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
   font-weight: 700;
 }
 
@@ -35,9 +35,9 @@
 }
 
 .btn-primary {
-  background: #2196F3;
+  background: $main-color;
   &:hover {
-    box-shadow: 0px 0px 20px 4px #2196f380;
+    box-shadow: 0px 0px 20px 4px $main-color-shadow;
   }
 }
 
@@ -56,3 +56,8 @@
 .btn-back {
   background-color: $gray;
 }
+
+.btn-next {
+  background-color: $main-color;
+}
+
