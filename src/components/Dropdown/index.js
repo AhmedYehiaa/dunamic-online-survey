@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 const Dropdown = ({ options, value, onChange }) => (
   <select onChange={onChange} value={value}>
+    <option value="">Please choose an option</option>
     {options.map(option => (
       <option key={option.value} value={option.value}>
         {option.name}
