@@ -22,7 +22,7 @@ class Summary extends Component {
     return (
       <div className="summary-container">
         <h1>Thank you for your feedback</h1>
-        <h2>Here are you answers</h2>
+        <h2>Here are your answers</h2>
         {questions && questions.map(question => (
           <div className="question-container" key={question.answer}>
             <div className="question-name">
