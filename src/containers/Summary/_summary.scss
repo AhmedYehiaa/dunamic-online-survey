@@ -1,0 +1,27 @@
+.question-container {
+  margin: 20px;
+  font-size: 26px;
+  background: $white;
+  color: $off-black;
+  padding: 30px;
+  text-align: left
+}
+
+.summary-container {
+  background-color: $white-gray;
+  padding: 50px;
+  min-width: 60%;
+  & h1 {
+    color: $light-blue;
+    margin-bottom: 20px;
+  }
+  & h2 {
+    margin-bottom: 45px;
+  }
+}
+
+.question-name {
+  color: $light-blue;
+  margin-bottom: 10px
+}
+

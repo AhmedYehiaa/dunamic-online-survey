@@ -6,6 +6,7 @@ import Header from './components/Header';
 import LandingPage from './containers/LandingPage';
 import NotFound from './components/NotFound';
 import SurveyForm from './containers/SurveyForm';
+import Summary from './containers/Summary';
 
 const App = () => {
   const title = 'Product Survey';
@@ -20,14 +21,14 @@ const App = () => {
       <div className="app-wrapper">
         <Switch>
           <Route path="/survey" component={LandingPage} />
-          <Route path="/surveyForm" component={SurveyForm} />
+          <Route path="/surveyForm/:id" component={SurveyForm} />
+          <Route path="/summary" component={Summary} />
           <Route path="/not-found" component={NotFound} />
           <Redirect from="/" exact to="/survey" />
           <Redirect to="/not-found" />
         </Switch>
       </div>
     </div>
-
   );
 };
 
