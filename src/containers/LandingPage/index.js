@@ -4,7 +4,7 @@ import Button, { TYPES, SIZES } from '../../components/Button';
 
 const LandingPage = (props) => {
   const handleTakeSurevey = () => {
-    props.history.push('/surveyForm');
+    props.history.push('/surveyForm/1');
   };
 
   return (
@@ -18,12 +18,6 @@ const LandingPage = (props) => {
         buttonSize={SIZES.LARGE}
         onClick={() => handleTakeSurevey()}
       />
-      <p className="landing-page-message">
-          We realize how precious your time is.
-          That’s why we made sure this survey will only take a quick
-        <span> 30 </span>
-          seconds
-      </p>
     </div>
   );
 };
