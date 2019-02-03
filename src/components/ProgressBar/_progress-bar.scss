@@ -1,9 +1,12 @@
 .progress-bar {
   position: relative;
-  height: 20px;
-  margin: $l-size;
-  border-radius: $xl-size;
-  border: 1px solid $white;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 50px;
+  border-radius: 0;
+  border: 1px solid $light-gray;
   background-color: $white;
   font-weight: 500;
+  border-radius: 0.6rem;
+  overflow: hidden;
 }

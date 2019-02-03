@@ -1,13 +1,20 @@
 .survey-form {
   .text-area {
     box-sizing: border-box;
-    width: 60%;
+    width: 75%;
     height: 100px;
-    padding: $s-size;
+    padding: 1.2rem;
     border: 1px solid $light-blue;
-    border-radius: $xs-size;
+    border-radius: 0.6rem;
     resize: none;
-    font-size: $m-size;
+    font-size: 1.6rem;
     font-weight: 400;
   }
 }
+
+
+textarea {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+textarea:focus {outline:0;}

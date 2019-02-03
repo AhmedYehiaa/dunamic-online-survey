@@ -2,29 +2,19 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  box-sizing: border-box;
-  padding: 0;
+* {
   margin: 0;
-  background: $dark-blue;
-  color: $white;
-  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $main-background;
+  color: $off-black;
+  font-family: 'Maven Pro', sans-serif;
   font-size: $m-size;
-  
 }
 
-button {
-  cursor: pointer;
+.text-white {
+  color: $white
 }
-
-button:disabled {
-  cursor: default;
-}
-
-button:focus {outline:0;}
-
-textarea {
-  font-family: 'Roboto', sans-serif;
-}
-
-textarea:focus {outline:0;}

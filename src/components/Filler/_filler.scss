@@ -1,7 +1,12 @@
 
 .filler {
-  background: $purpel;
+  background: $action-color;
   height: 100%;
-  border-radius: inherit;
+  border-radius: 0.6rem 0 0 0.6rem;
   transition: width .2s ease-in;
 }
+
+.filler__percentage {
+  margin-left: 20px; 
+}
+

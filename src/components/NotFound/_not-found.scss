@@ -1,6 +1,6 @@
 .notFound--status {
   margin: 0;
-  font-size: 200px;
+  font-size: 150px;
 }
 
 .notFound--message {
@@ -10,10 +10,13 @@
 
 .link {
   padding: $m-size;
-  margin-top: $m-size;
+  margin: 30px auto 0;
+  display: block;
+  max-width: 250px;
   border-radius: $xs-size;
-  background-color: $purpel;
+  background-color: $action-color;
   color: $white;
   font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase
 }

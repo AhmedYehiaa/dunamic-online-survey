@@ -1,10 +1,12 @@
 .header {
   position: fixed;
   width: 100%;
-  margin-bottom: $xl-size;
-  padding: $m-size $l-size;
-  background: $off-black;
-  color: $white;
+  height: 100px;
+  top: 0;
+  left: 0;
+  padding: 1.6rem 3.2rem;
+  background: $header;
+  box-shadow: -1px -8px 20px 6px $off-black;
 }
 
 .header__title {
@@ -13,8 +15,7 @@
 }
 
 .header__subtitle {
-  color: $off-white;
+  color: #577388;
   font-size: $m-size;
   font-weight: 500;
-  margin: 0;
 }
