@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import TextArea from '../index';
 
-test('it should render textArea component with ', () => {
+test('it should render textArea component with the provided props', () => {
   const onChange = jest.fn();
   const component = renderer.create(
     <TextArea
