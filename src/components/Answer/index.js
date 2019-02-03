@@ -2,23 +2,34 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TextArea from '../TextArea';
 import Dropdown from '../Dropdown';
+import RadioGroup from '../RadioGroup';
 
 const Answer = ({
   type, value, placeholder, options, handleUpdatingAnswer,
 }) => {
   const renderAnswer = () => {
-    if (type === 'text') {
-      return (
-        <TextArea value={value} placeholder={placeholder} onChange={handleUpdatingAnswer} />
-      );
+    switch (type) {
+      case 'dropdown':
+        return (
+          <Dropdown options={options} value={value} onChange={e => handleUpdatingAnswer(e.target.value)} />
+        );
+
+      case 'radioButton':
+        return (
+          <RadioGroup name="productSurvey" selectedValue={value} value={value} options={options} onClick={e => handleUpdatingAnswer(e)} />
+        );
+
+      case 'text':
+        return (
+          <TextArea value={value} placeholder={placeholder} onChange={handleUpdatingAnswer} />
+        );
+      default:
+        return '';
     }
-    return (
-      <Dropdown options={options} value={value} onChange={handleUpdatingAnswer} />
-    );
   };
 
   return (
-    <div className="Answer-container">
+    <div className="answer-container">
       {renderAnswer()}
     </div>
   );
