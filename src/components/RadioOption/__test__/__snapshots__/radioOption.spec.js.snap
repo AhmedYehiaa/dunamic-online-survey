@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it should renders each radio option 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RadioOption
+    defaultChecked={true}
+    label="name1"
+    name="value1"
+    onClick={[MockFunction]}
+    value="value1"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <input
+          defaultChecked={true}
+          id="value1"
+          name="value1"
+          onClick={[Function]}
+          type="radio"
+        />,
+        <label
+          htmlFor="value1"
+        >
+          name1
+        </label>,
+      ],
+      "className": "radio-option",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "defaultChecked": true,
+          "id": "value1",
+          "name": "value1",
+          "onClick": [Function],
+          "type": "radio",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "name1",
+          "htmlFor": "value1",
+        },
+        "ref": null,
+        "rendered": "name1",
+        "type": "label",
+      },
+    ],
+    "type": "p",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <input
+            defaultChecked={true}
+            id="value1"
+            name="value1"
+            onClick={[Function]}
+            type="radio"
+          />,
+          <label
+            htmlFor="value1"
+          >
+            name1
+          </label>,
+        ],
+        "className": "radio-option",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "defaultChecked": true,
+            "id": "value1",
+            "name": "value1",
+            "onClick": [Function],
+            "type": "radio",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "name1",
+            "htmlFor": "value1",
+          },
+          "ref": null,
+          "rendered": "name1",
+          "type": "label",
+        },
+      ],
+      "type": "p",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
