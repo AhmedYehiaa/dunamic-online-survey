@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Dropdown from '../index';
 
-it('it should renders the button', () => {
+it('it should renders the dropdown list', () => {
   const handleUpdatingAnswer = jest.fn();
   const options = [{
     name: 'name1',
