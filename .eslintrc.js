@@ -26,6 +26,7 @@ module.exports = {
     "no-unused-expressions": ["error", { "allowShortCircuit": true }],
     "camelcase": ["warn", {"properties": "never"}],
     "no-underscore-dangle": "warn",
+    "no-restricted-globals": ["error", "event", "fdescribe"],
     "jsx-a11y/label-has-associated-control": [ "error", {
         "required": {
           "some": [ "nesting", "id"  ]
