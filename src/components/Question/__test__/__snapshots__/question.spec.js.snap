@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Link changes the class when hovered 1`] = `
+exports[`it should render question component with the provided text 1`] = `
 <h1
   className="question"
 >
-  http://www.facebook.com
+  What is your feedback ?
 </h1>
 `;
