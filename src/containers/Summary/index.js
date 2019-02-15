@@ -1,4 +1,3 @@
-/* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -8,8 +7,10 @@ class Summary extends Component {
   }
 
   componentWillMount() {
-    if (!this.state.questions) {
-      this.props.history.push('/survey');
+    const { questions } = this.state;
+    const { history } = this.props;
+    if (!questions) {
+      history.push('/survey');
     }
   }
 
