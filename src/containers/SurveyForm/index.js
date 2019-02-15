@@ -1,5 +1,3 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/sort-comp */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Question from '../../components/Question';
@@ -16,14 +14,15 @@ class SurveyForm extends Component {
 
   componentWillMount() {
     const { questions } = this.state;
+    const { match, history } = this.props;
     // Get question's index from URL
-    const index = Number(this.props.match.params.id);
+    const index = Number(match.params.id);
     const unAnsweredQuestion = questions.findIndex(q => q.answer === '');
 
     if (isNaN(index) || !questions[index - 1]) {
-      this.props.history.push('/not-found');
+      history.push('/not-found');
     } else if (unAnsweredQuestion + 1 < index && unAnsweredQuestion !== -1) {
-      this.props.history.push(`${unAnsweredQuestion + 1}`);
+      history.push(`${unAnsweredQuestion + 1}`);
     } else {
       const { answer } = this.getCurrentQuestion();
       this.updateAnswer(answer);
@@ -31,14 +30,11 @@ class SurveyForm extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.match.params.id !== prevProps.match.params.id) {
+    const { match } = this.props;
+    if (match.params.id !== prevProps.match.params.id) {
       const { answer } = this.getCurrentQuestion();
       this.updateAnswer(answer);
     }
-  }
-
-  updateAnswer(answer) {
-    this.setState({ answer });
   }
 
   getNumberOfAnswers() {
@@ -48,12 +44,22 @@ class SurveyForm extends Component {
   }
 
   getCurrentQuestion() {
-    const question = this.state.questions[Number(this.props.match.params.id) - 1];
+    const { questions } = this.state;
+    const { match } = this.props;
+    const question = questions[Number(match.params.id) - 1];
     return question;
+  }
+
+  handleBackNavigation = () => {
+    const { match, history } = this.props;
+    const currentQuestionId = Number(match.params.id);
+    history.push(`${currentQuestionId - 1}`);
   }
 
   submit(questionId) {
     const { questions, answer } = this.state;
+    const { match, history } = this.props;
+
     const updatedQuestions = [...questions];
     const index = updatedQuestions.findIndex(question => question.id === questionId);
     updatedQuestions[index].answer = answer.trim();
@@ -62,22 +68,23 @@ class SurveyForm extends Component {
 
     const countAnsweredQuestions = this.getNumberOfAnswers();
     if (countAnsweredQuestions !== questions.length) {
-      this.props.history.push(`/surveyForm/${Number(this.props.match.params.id) + 1}`);
+      history.push(`/surveyForm/${Number(match.params.id) + 1}`);
     } else {
-      this.props.history.push('/summary');
+      history.push('/summary');
     }
   }
 
-  handleBackNavigation = () => {
-    const currentQuestionId = Number(this.props.match.params.id);
-    this.props.history.push(`${currentQuestionId - 1}`);
+  updateAnswer(answer) {
+    this.setState({ answer });
   }
 
   render() {
     const { answer, questions } = this.state;
+    const { match } = this.props;
+
     const currentQuestion = this.getCurrentQuestion();
     const count = this.getNumberOfAnswers();
-    const currentQuestionId = +this.props.match.params.id;
+    const currentQuestionId = Number(match.params.id);
 
     return (
       <div className="survey-Container">
